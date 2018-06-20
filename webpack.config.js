@@ -4,7 +4,7 @@ var HtmlWebpackPlugin   = require('html-webpack-plugin');
 
 // 环境变量配置，dev / online
 var WEBPACK_ENV         = process.env.WEBPACK_ENV || 'dev';
-var publicPath          = 'dev' === WEBPACK_ENV1? '/dist/' : '//s.wiblog.cn/mallWeb/dist/';
+var publicPath          = 'dev' === WEBPACK_ENV? '/dist/' : '//s.wiblog.cn/mallWeb/dist/';
 
 
 // 获取html-webpack-plugin参数的方法 html模板处理 将对应js css引进来 加入hash
@@ -37,7 +37,7 @@ var config = {
     },
     output: { // dist文件目录
         path: '/dist/', 
-        publicPath : '/dist/',
+        publicPath : publicPath,
         filename: 'js/[name].js'
     },
 
