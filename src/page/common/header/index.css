@@ -1,0 +1,48 @@
+/* 通用头部导航 */
+.header .logo{
+    position: absolute;
+    left: 20px;
+    top: 34px;
+    display: block;
+    font-size: 40px;
+    color: #A21C1D;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header .search-con{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.header .search-con .search-input{
+    position: absolute;
+    top: 50px;
+    left: 400px;
+    width: 500px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    padding-left: 10px;
+    border: 2px solid #A21C1D;
+    outline: none;
+}
+.header .search-con .search-btn{
+    position: absolute;
+    top: 50px;
+    left: 915px;
+    height: 44px;
+    width: 80px;
+}
+
+
+.result{
+    background: #FFF;
+    width: 512px;
+    z-index: 9999;
+    box-shadow:4px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.result li{
+    padding: 10px;
+}
+

@@ -1,0 +1,79 @@
+.navBar{
+    background: #eee;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 30px;
+    padding-right: 30px; 
+}
+/* 用户部分 */
+.navBar .user{
+    float: left;
+}
+.navBar .user.login{
+    display: none;
+}
+.navBar .user .link{
+    margin-right: 10px;
+}
+/* 导航链接部分 */
+.navBar .nav-list{
+    float: right;
+}
+.navBar .nav-list .nav-item{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/*喵，欢迎来到天喵*/
+.navBar em {
+    color: #999;
+    margin-right: 10px;
+    font-style: normal;
+}
+
+/*小三角*/
+.menu-item .triangle{
+    display: inline-block;
+    border: #EEEEEE solid 3px;
+    border-top: red solid 3px;
+    width:0;
+    border-top-color: #bbb;
+}
+
+.menu-item:hover .triangle{
+
+}
+
+/*下拉框*/
+.dropdown{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/*下拉选项*/
+.dropdown-content{
+    position: absolute;
+    background: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 8px 10px;
+    display: none;
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/*.sub-menu li{
+    line-height: 1.8;
+}
+.sub-menu a{
+    color: #666;
+}
+.sub-menu{
+    width: 74px;
+}
+*/
+
+
+

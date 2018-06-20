@@ -1,0 +1,31 @@
+
+.footer{
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.footer .links{
+    text-align: center;
+    color: #666;
+    line-height: 30px;
+}
+.footer .links .link{
+    padding: 0 10px;
+}
+.footer .copyright{
+    text-align: center;
+    color: #666;
+    line-height: 30px;
+}
+
+/*页脚保证承诺部分开始-------*/
+.tmall-ensure{
+    height: 100px;
+    margin: 25px auto;
+    background: url(../../../image/tmall-ensure.jpg) no-repeat center center;
+    border-bottom: 1px solid #ededed;
+}
+.tmall-ensure a{
+    width: 297px;
+    height: 100px;
+    display: inline-block;
+}
