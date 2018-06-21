@@ -1,20 +1,20 @@
 {
-  "name": "mallWeb",
+  "name": "mallweb",
   "version": "1.0.0",
-  "description": "mallWeb",
+  "description": "项目地址：[天喵商城](http://mall.wiblog.cn)",
   "main": "index.js",
   "scripts": {
-    "dev": "WEBPACK_ENV=dev webpack-dev-server --inline --port 8088",
-    "dev_win": "set WEBPACK_ENV=dev && webpack-dev-server --inline --port 8088",
-    "dist": "WEBPACK_ENV=online webpack -p",
-    "dist_win": "set WEBPACK_ENV=online && webpack -p"
+    "set_dev": "set WEBPACK_ENV=dev",
+    "set_online": "set WEBPACK_ENV=online",
+    "build_dev": "webpack-dev-server --inline --port 8088",
+    "build_dist": "webpack -p",
+    "dev": "npm run set_dev && npm run build_dev",
+    "dist": "npm run set_online && npm run build_dist"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:weimin96/mallWeb.git"
+    "url": "git+https://github.com/weimin96/mallWeb.git"
   },
-  "author": "areo",
-  "license": "ISC",
   "devDependencies": {
     "css-loader": "^0.28.1",
     "extract-text-webpack-plugin": "^1.0.1",
@@ -29,5 +29,11 @@
   "dependencies": {
     "font-awesome": "^4.7.0",
     "hogan": "^1.0.2"
-  }
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weimin96/mallWeb/issues"
+  },
+  "homepage": "https://github.com/weimin96/mallWeb#readme"
 }

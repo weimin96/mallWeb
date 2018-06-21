@@ -36,7 +36,7 @@ var config = {
     },
     output: { // dist文件目录
         path: __dirname + '/dist/', 
-        publicPath : '//s.wiblog.cn/mallWeb/dist/',
+        publicPath : publicPath,
         filename: 'js/[name].js'
     },
 
