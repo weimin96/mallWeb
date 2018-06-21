@@ -30,7 +30,7 @@ var header = {
                 var searchText = $("#search-input").val();         
                 $.ajax({
                     type: "GET",
-                    url: "/list.do?keyword=" + searchText,
+                    url: "/product/list.do?keyword=" + searchText,
                     // dataType: "jsonp",
                     // jsonp: 'cb',
                     success: function(data) {
