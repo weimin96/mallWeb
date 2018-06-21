@@ -60,12 +60,13 @@
 
     命令: npm install
 
-6.启动项目
+6.启动项目 `(待改进)`
 
     开发模式: 
-    set WEBPACK_ENV=dev 
-    npm run build_dev
-    生产模式: 
+    修改webpack.config.js下的config.output.publicpath 为'/dist/'
+    npm run dev
+    生产模式(线上): 
+    修改webpack.config.js下的config.output.publicpath 为'//(你的域名)/mallWeb/dist/'
     npm run dist
 
 7.开发模式下预览项目

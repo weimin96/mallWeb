@@ -2,12 +2,8 @@ var webpack             = require('webpack');
 var ExtractTextPlugin   = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin   = require('html-webpack-plugin');
 
-// 环境变量配置，dev / online
-var WEBPACK_ENV         = process.env.WEBPACK_ENV || 'dev';
-var publicPath          = WEBPACK_ENV === 'dev'  ? '/dist/' : '//s.wiblog.cn/mallWeb/dist/';
 
-console.log(process.env.WEBPACK_ENV);
-console.log(publicPath);
+
 // 获取html-webpack-plugin参数的方法 html模板处理 将对应js css引进来 加入hash
 var getHtmlConfig = function(name, title){
     return {
@@ -38,7 +34,8 @@ var config = {
     },
     output: { // dist文件目录
         path: __dirname + '/dist/', 
-        publicPath : publicPath,
+        publicPath : '//s.wiblog.cn/mallWeb/dist/',
+        // publicPath : '/dist/',
         filename: 'js/[name].js'
     },
 
@@ -107,9 +104,5 @@ var config = {
         new HtmlWebpackPlugin(getHtmlConfig('result', '操作结果')),
     ]
 };
-
-if('dev' === WEBPACK_ENV){   // 设置开发模式
-    config.entry.common.push('webpack-dev-server/client?http://localhost:8088/');
-}
 
 module.exports = config;
