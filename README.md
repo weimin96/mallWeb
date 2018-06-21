@@ -62,8 +62,11 @@
 
 6.启动项目
 
-    开发模式: npm run dev
-    生产模式: npm run dist
+    开发模式: 
+    set WEBPACK_ENV=dev 
+    npm run build_dev
+    生产模式: 
+    npm run dist
 
 7.开发模式下预览项目
 

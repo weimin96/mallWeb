@@ -6,6 +6,8 @@ var HtmlWebpackPlugin   = require('html-webpack-plugin');
 var WEBPACK_ENV         = process.env.WEBPACK_ENV || 'dev';
 var publicPath          = WEBPACK_ENV === 'dev'  ? '/dist/' : '//s.wiblog.cn/mallWeb/dist/';
 
+console.log(process.env.WEBPACK_ENV);
+console.log(publicPath);
 // 获取html-webpack-plugin参数的方法 html模板处理 将对应js css引进来 加入hash
 var getHtmlConfig = function(name, title){
     return {

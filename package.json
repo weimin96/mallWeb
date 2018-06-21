@@ -4,12 +4,8 @@
   "description": "项目地址：[天喵商城](http://mall.wiblog.cn)",
   "main": "index.js",
   "scripts": {
-    "set_dev": "set WEBPACK_ENV=dev",
-    "set_online": "set WEBPACK_ENV=online",
     "build_dev": "webpack-dev-server --inline --port 8088",
-    "build_dist": "webpack -p",
-    "dev": "npm run set_dev && npm run build_dev",
-    "dist": "npm run set_online && npm run build_dist"
+    "dist": "set WEBPACK_ENV=online && webpack -p"
   },
   "repository": {
     "type": "git",
