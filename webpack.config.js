@@ -35,7 +35,7 @@ var config = {
         'result'            : ['./src/page/result/index.js'],
     },
     output: { // dist文件目录
-        path: __dirname + '/dist/', 
+        path: './dist/', 
         publicPath : '//s.wiblog.cn/mallWeb/dist/',
         filename: 'js/[name].js'
     },
