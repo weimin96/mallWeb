@@ -84,7 +84,9 @@ var page = {
     },
     // 数据匹配
     filter : function(data){
-        data.subImages = data.subImages.split(',');
+        console.log(data);
+        console.log(data.subImage);
+        data.subImage = data.subImage.split(',');
     }
 };
 $(function(){
